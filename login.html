@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="HotViewLabs"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" type="text/css" href="css/acc_login.css">
+        <title>login</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="logo">
+                <h1 class="logo-text">Hot <span>View</span> Labs</h1>
+            </div>
+            <div class="search-icon">
+                <i class="fa fa-search"></i>
+                <input type="text" placeholder="Search.." name="search2">
+            </div>
+            <h1 class="title">Hot View Labs</h1>
+        </header>
+
+        <nav>
+
+            <i class="fa fa-bars menu-icon"></i>
+            <ul class="nav">
+                <li><a href="#">Home</a><li> 
+                <li><a href="#">Blog</a></li>
+                <li>
+                    <a href="#">About</a>  
+                    <ul>
+                       <li><a href="#">about us</a></li>
+                       <li><a href="#" >contact</a></li> 
+                    </ul>
+                <!--<li><a href="#">Login</a></li>
+                <li><a href="#">register</a></li> -->
+                <li>
+                  <a href="#">
+                     <i class="fa fa-user"></i>
+                     lili Bloom
+                     <i class="fa fa-chevron-down"></i>
+                   </a> 
+                   <ul>
+                      <li><a href="#">Dashboard</a></li>
+                      <li><a href="#" class="logout">logout</a></li>
+                   </ul>
+                </li>
+            </ul>
+        </nav>
+    
+        <main>
+            <div class="auth-content">
+
+                <form action="login.html" method="post">
+                  <h2 class="form-title">Login</h2>
+            
+                  <div>
+                    <label>Username</label>
+                    <input type="text" name="username" class="text-input">
+                  </div>
+                  <div>
+                    <label>Password</label>
+                    <input type="password" name="password" class="text-input">
+                  </div>
+                  <div>
+                    <button type="submit" name="login-btn" class="btn btn-big">Login</button>
+                  </div>
+                  <p>Or <a href="register.html">Sign Up</a></p>
+                </form>
+            </div>
+
+        </main>
+
+
+  <!-- JQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- Custom Script -->
+  <script src="js/scripts.js"></script>
+        
+    </body>
+      
+      </html>
+

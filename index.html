@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="HotViewLabs"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <title>blog feed page</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+</head>
+        
+
+        
+    <body>
+        <header>
+            <div class="logo">
+                <h1 class="logo-text">Hot <span>View</span> Labs</h1>
+            </div>
+            <div class="search-icon">
+                <i class="fa fa-search"></i>
+                <input type="text" placeholder="Search.." name="search2">
+            </div>
+            <!--<h1 class="title">Hot View Labs</h1>-->
+        </header>
+        <nav>
+          <!--<i class="fa fa-bars menu-icon"></i> -->
+          <ul class="nav">
+              <li><a href="index.html">Home</a></li> 
+              <li><a href="edit_post.html">Blog</a></li>
+              <li>
+                  <a href="#">About</a>  
+                  <ul>
+                      <li><a href="#">about us</a></li>
+                      <li><a href="#">contact</a></li> 
+                      <!--<li><a href="#">Login</a></li>
+                      <li><a href="#">register</a></li> -->
+                  </ul>
+              </li>
+              <li>
+                  <a href="#">
+                      <i class="fa fa-user"></i>
+                      Lili Bloom
+                      <i class="fa fa-chevron-down"></i>
+                  </a> 
+                  <ul>
+                      <li><a href="#">Dashboard</a></li>
+                      <li><a href="#" class="logout">logout</a></li>
+                  </ul>
+              </li>
+          </ul>
+      </nav>
+
+      <!-- Page Wrapper -->
+      <div class="page-wrapper">
+
+        <!-- Post Slider -->
+        <div class="post-slider" id="post-slider">
+          <h1 class="slider-title">Trending Posts</h1>
+          <i class="fa fa-chevron-left prev"></i>
+          <i class="fa fa-chevron-right next"></i>
+  
+          <div class="post-wrapper" id="post-wrapper">
+  
+            <!-- <div class="post">
+              <img src="assets/unsplashJs8KGQLfhw5.jpg" alt="hands of a man working on a computer " class="slider-image">
+              <div class="post-info">
+                <h4><a href="post/index.html">10 Tips for Effective Time Management!</a></h4>
+                <i class="fa fa-user">john Doe</i>
+                &nbsp;
+                <i class="fa fa-calendar"> Mar 8, 20124</i>
+              </div>
+            </div>
+  
+            <div class="post">
+               <img src="assets/unsplashJs8KGQLfhw7.jpg" alt="robot finger almost touching human finger" class="slider-image">
+               <div class="post-info">
+                 <h4><a href="post/index.html">10 Tips for Effective Time Management!</a></h4>
+                 <i class="fa fa-user"> Lili tampa</i>
+                 &nbsp;
+                  <i class="fa fa-calendar"> Mar 18, 2024</i>           
+               </div>
+            </div>
+  
+            <div class="post">
+                <img src="assets/unsplashJs8KGQLfhw6.jpg" alt="" class="slider-image">
+                <div class="post-info">
+                  <h4><a href="post/index.html">10 Tips for Effective Time Management!</a></h4>
+                  <i class="fa fa-user"> Jane darwin</i>
+                  &nbsp;
+                  <i class="fa fa-calendar"> Mar 8, 2019</i>           
+                </div>
+            </div>
+  
+            <div class="post">
+                <img src="assets/unsplashKq8dGNS1lLk.jpg" alt="" class="slider-image">
+                <div class="post-info">
+                  <h4><a href="post/index.html">10 Tips for Effective Time Management!</a></h4>
+                  <i class="fa fa-user"> M. tim</i>
+                  &nbsp;
+                  <i class="fa fa-calendar"> Apr 8, 2024</i>
+                </div> -->
+            <!-- </div> -->
+  
+            <div class="post">
+                <img src="assets/unsplashJs8KGQLfhw4.jpg" alt="light bulb" class="slider-image">
+                <div class="post-info">
+                  <h4><a href="post/index.html">10 Tips for Effective Time Management!</a></h4>
+                  <i class="fa fa-user"> Richard Myhre</i>
+                  &nbsp;
+                  <i class="fa fa-calendar"> Apr 18, 2024</i>
+                </div>
+            </div>
+        </div>
+        
+      </div>
+      <!-- // Post Slider -->
+
+      <!--content-->
+      <div class="Content-clearfix">
+        
+        <!--main -->
+        <div class="main-content">
+          <h1 class="recent-post-title">Recent Posts</h1>
+  
+          <div class="post clearfix"> 
+            <img src="assets/imgCar23.jpg" alt="robot finger almost toucher human finger" class="post-image">
+            <div class="post-preview">
+              <h2><a href="post/index.html">The 10 best innovators of our decade</a></h2>
+              <i class="fa fa-user"> Adam Levine</i>
+              &nbsp;
+              <i class="fa fa-calendar"> Mar 11, 2024</i>
+              <p class="preview-text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Exercitationem optio possimus a inventore maxime laborum.
+              </p>
+              <a href="post/index.html" class="btn read-more">Read More</a>
+            </div>
+          </div>
+  
+          <div class="post clearfix">
+            <img src="assets/imgCar22.jpg" alt="technological tools icons floating " class="post-image">
+            <div class="post-preview">
+              <h2><a href="index_post.html">The 10 best innovators of our decade</a></h2>
+              <i class="fa fa-user"> Dexter Morgan</i>
+              &nbsp;
+              <i class="fa fa-calendar"> Mar 21, 2034</i>
+              <p class="preview-text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Exercitationem optio possimus a inventore maxime laborum.
+              </p>
+              <a href="index_post.html" class="btn read-more">Read More</a>
+            </div>
+          </div>
+          <div class="post clearfix">
+            <img src="assets/imgCar2.jpg" alt="light bulb" class="post-image">
+            <div class="post-preview">
+              <h2><a href="post/index.html">The 10 best innovators of our decade</a></h2>
+              <i class="fa fa-user"> Richard Myhre</i>
+              &nbsp;
+              <i class="fa fa-calendar"> Mar 19, 2024</i>
+              <p class="preview-text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Exercitationem optio possimus a inventore maxime laborum.
+              </p>
+              <a href="index_post.html" class="btn read-more">Read More</a>
+            </div>
+          </div>
+  
+        </div>
+        
+        <!--// Main content-->
+
+        <!--SIDEBAR-->
+
+        <div class="sidebar">
+
+          <div class="section search">
+            <h2 class="section-title">Search</h2>
+            <form action="index.html" method="post">
+              <input type="text" name="search-term" class="text-input" placeholder="Search...">
+            </form>
+            <div class="button-container">
+              <button id="share-button">
+                <i class="fa fa-paper-plane"></i> Share 
+              </button>
+              <button id="edit-button">
+                <i class="fa fa-pencil" ></i> Edit
+              </button>
+              <button id="comment-button">
+                <i class="fa fa-commenting-o" ></i> comment 
+              </button>
+
+            </div>
+            
+            
+          </div>
+
+          <div class="section topics">
+            <h2 class="section-title"></h2>
+            <ul>
+                <li>
+                    <div class="topic-item">
+                        <img src="assets/unsplashKq8dGNS1lLk.jpg" alt="man avatar">
+                        <a href="#"><br>Liam<span> Bloom</span></a>
+                    </div>
+                </li>
+                <hr>
+                <p class="topic-change">Top Posts</p>
+                <hr>
+                <li>
+                    <div class="topic-item">
+                        <img src="assets/rectangle487.jpg" alt="robot hand holding a luminescent globe">
+                        <a href="#">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing Exercitationem optio possimus a inventore maxime laborum.</p>
+                        </a>
+                    </div>
+                </li>
+                <hr>
+                <li>
+                    <div class="topic-item">
+                        <img src="assets/unsplashJs8KGQLfhw6.jpg" alt="man avatar">
+                        <a href="#">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit Exercitationem optio possimus a inventore maxime laborum.</p>
+                        </a>
+                    </div>
+                  </li>
+                <hr>
+                <li>
+                  <div class="topic-item">
+                      <img src="assets/unsplash9XngoIpxcEo.jpg" alt="abstract of colors">
+                      <a href="#">
+                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A inventore maxime laborum.</p>
+                      </a>
+                  </div>
+              </li>
+              <hr>
+            </ul>
+        </div>
+
+      </div>
+      <!-- // Content -->
+
+    </div>
+
+    <!--footer-->
+
+    <footer>
+      <div class="footer-1">
+        <div class="footer-nav">
+            <h4>locations</h4>
+            <p>New York: 123 Bedford av , NY 12345 </p>
+            <p>Paris : 23 rue de Turenne, 75003 </p> 
+        </div>
+        <div class="footer-nav">
+            <h4>contact</h4>
+            <p class="email-id">HotviewLabs@hotmail.com</p>
+            <h3>+47 99 99 99 99</h3>                  
+        </div>
+        <div class="footer-nav">
+            <h4>opening hours</h4>
+            <p>Lundi au vendredi De 6h30 à 23h </p>
+            <p>Monday to Frisay from 6am to 10.30pm</p>               
+        </div>
+        <div class="footer-nav">
+            <h4>locations</h4>                   
+            <p>New York: 123 Bedford av , NY 12345 </p>
+            <p>Paris : 23 rue de Turenne, 75003 </p>                 
+        </div>
+        <div class="social-icons">
+            <h4>Follow us</h4>
+            <a href="#"> <i class="fa fa-twitter"></i></a>
+            <a href="#"> <i class="fa fa-facebook-f"></i></a>
+            <a href="#"> <i class="fa fa-instagram"></i></a>
+            <a href="#"> <i class="fa fa-linkedin"></i></a>
+        </div>
+        <div class="footer-nav">
+          <h4>Newsletter</h4>
+          <form>
+            <i class="fa fa-envelope"></i>
+            <input type="email" placeholder="enter your email id" required>
+            <button type="submit"><i class="fa fa-arrow-right"></i></button>
+          </form>
+        </div>
+          
+        </div>   
+      </div>
+     <hr>
+      <p class="copyright">Copyright © 2024 HotView Labs</p>
+
+
+    
+
+    </footer>
+     
+  
+
+    </div>
+   
+
+<!-- JQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Slick Carousel -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<!-- Custom Script -->
+<!-- <script src="main.js"></script> -->
+<script src="scripts.js"></script>
+
+
+</body>
+</html>
+
+
+            
