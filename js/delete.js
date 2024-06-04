@@ -7,33 +7,28 @@ function fetchPostData() {
     fetch(apiUrl)
         .then(response => response.json())
         .then(data => {
-            // displayPosts(data.data);----- reload the page instead 
                 })
         .catch(error => console.error("Error fetching posts:", error));
 
     function deletePost() {
-            const deleteUrl = "https://v2.api.noroff.dev/blog/posts/Synthia"; // Replace with your actual delete URL
+            const deleteUrl = "https://v2.api.noroff.dev/blog/posts/Synthia";
             fetch(deleteUrl, {
                 method: 'DELETE',
                 headers: {
                     'Content-Type': 'application/json',
-                    // Add any additional headers if required
                 },
             })
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }
-                // handle successful response
                 console.log('Resource deleted successfully');
             })
             .catch(error => {
-                // handle error
                 console.error('There was a problem with your fetch operation:', error);
             });
         }
         
-        // Call fetchPostData when DOM is loaded
         document.addEventListener("DOMContentLoaded", function () {
             fetchPostData();
         });
@@ -51,7 +46,6 @@ function deletePost(postId) {
     .then(response => {
         if (response.ok) {
             alert("Post deleted successfully.");
-            // Remove the post from the table
             const row = document.querySelector(`button.delete[data-id='${postId}']`).closest("tr");
             row.remove();
         } else {
@@ -69,5 +63,26 @@ document.addEventListener("DOMContentLoaded", function() {
             const postId = button.getAttribute("data-id");
             deletePost(postId);
         });
+    });
+});
+
+/*$(document).ready(function() {
+    $('.delete').on('click', function() {
+        var postId = $(this).data('id');
+        var confirmation = confirm('Are you sure you want to delete this post?');
+
+        if (confirmation) {
+            $.ajax({
+                url: 'https://api.noroff.no/v1/posts//Synthia',
+                type: 'DELETE',
+                success: function(response) {
+                    alert('Post deleted successfully');
+                    $(this).closest('tr').remove();
+                },
+                error: function(xhr, status, error) {
+                    alert('Error deleting post');
+                }
+            });
+        }
     });
 });

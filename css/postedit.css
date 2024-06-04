@@ -353,6 +353,74 @@ form div {
 }
   
 
+@media only screen and (max-width: 1024px) {
+    .admin-content,
+    .sidebar {
+        width: 45%;
+    }
+
+    .admin-wrapper .left-sidebar {
+        flex: 3;
+    }
+
+    .admin-wrapper .admin-content {
+        flex: 9;
+    }
+}
+
+
+@media only screen and (max-width: 770px) {
+    .admin-content,
+    .sidebar {
+        width: 100%;
+    }
+
+    .admin-wrapper {
+        flex-direction: column;
+    }
+
+    .admin-wrapper .left-sidebar {
+        flex: initial;
+        width: 100%;
+    }
+
+    .admin-wrapper .admin-content {
+        flex: initial;
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .admin-content,
+    .sidebar {
+        width: 100%;
+    }
+
+    .admin-wrapper {
+        flex-direction: column;
+    }
+
+    .admin-wrapper .left-sidebar {
+        flex: initial;
+        width: 100%;
+    }
+
+    .admin-wrapper .admin-content {
+        flex: initial;
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
   
 /*.msg {
     width: 100%;

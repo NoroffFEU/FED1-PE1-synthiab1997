@@ -58,3 +58,29 @@ function fetchPostData() {
 document.addEventListener("DOMContentLoaded", function () {
     fetchPostData();
 });
+
+$(document).ready(function(){
+    $('.post-wrapper').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      prevArrow: $('.prev'),
+      nextArrow: $('.next'),
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1
+          }
+        },
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 2
+          }
+        }
+      ]
+    });
+  });
+  

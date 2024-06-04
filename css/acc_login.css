@@ -60,8 +60,8 @@ header .search-icon{
 }
 header .logo i{
     font-size: 20px;
-   background: black;
-   float: right;
+    background: black;
+    float: right;
 
 }
 header .search-icon i{
@@ -72,9 +72,9 @@ header .search-icon i{
 header .logo{
     float: left;
     height: inherit;
-    border: 1px solid ;
     margin-left: 2em;
 }
+
 header .logo-text{
     margin: 5px;
     background-image: linear-gradient(45deg, #f3ec78, #af4261);
@@ -307,25 +307,7 @@ main {
     background-color: #3a856a;
 }
 
-.msg {
-    width: 100%;
-    margin: 5px auto;
-    padding: 8px;
-    border-radius: 5px;
-    list-style: none;
-}
-  
-.success {
-    color: #3a6e3a;
-    border: 1px solid #3a6e3a;
-    background: #bcf5bc;
-}
-  
-.error {
-    color: #884b4b;
-    border: 1px solid #884b4b;
-    background: #f5bcbc;
-}
+
 
 .btn {
     padding: .5rem 1rem;
@@ -345,4 +327,95 @@ main {
 .btn:hover {
     color: white !important;
     background:  #3a856a;
-  }
+}
+
+/* MEDIA QUERY*/
+
+@media only screen and (max-width: 600px) {
+    header {
+        height: 60px;
+        padding: 0.5rem;
+    }
+
+    header .logo {
+        margin-left: 1em;
+    }
+
+    .nav li a {
+        font-size: 1.2em;
+    }
+
+    .auth-content {
+        width: 90%;
+        margin: 20px auto;
+        padding: 10px;
+    }
+
+    .auth-content .form-title {
+        font-size: 20px;
+    }
+
+    .auth-content form .text-input {
+        font-size: 14px;
+    }
+
+    .auth-content .btn {
+        width: 50%;
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .nav li a {
+        font-size: 1.4em;
+    }
+
+    .auth-content {
+        width: 60%;
+        margin: 30px auto;
+        padding: 20px;
+    }
+
+    .auth-content .form-title {
+        font-size: 22px;
+    }
+
+    .auth-content form .text-input {
+        font-size: 16px;
+    }
+
+    .auth-content .btn {
+        width: 40%;
+        padding: 10px;
+        font-size: 16px;
+    }
+}
+
+
+@media only screen and (min-width: 1025px) {
+    .nav li a {
+        font-size: 1.6em;
+    }
+
+    .auth-content {
+        width: 40%;
+        margin: 50px auto;
+        padding: 20px;
+    }
+
+    .auth-content .form-title {
+        font-size: 24px;
+    }
+
+    .auth-content form .text-input {
+        font-size: 18px;
+    }
+
+    .auth-content .btn {
+        width: 30%;
+        padding: 12px;
+        font-size: 18px;
+    }
+}
