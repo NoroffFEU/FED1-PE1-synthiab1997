@@ -771,7 +771,6 @@ form button .fa-arrow-right{
   cursor: pointer;
 }
 
-
 .social-icons .fa:hover{
   color:rgba(37, 131, 135, 0.704) ;
   background-color:#8EB6DC;
@@ -787,11 +786,12 @@ form button .fa-arrow-right{
 }*/
 
 .footer-1 .copyright{
-  text-align: center;
-  height: 10px;
-  width: 100%;
-  bottom: 0;
-  margin: 10px 0;  
+    text-align: center;
+    height: 10px;
+    width: 100%;
+    bottom: 0;
+    margin: 10px 0;
+    
 }
 
 
