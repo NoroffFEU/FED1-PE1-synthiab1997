@@ -10,7 +10,7 @@ function fetchPostData() {
                 })
         .catch(error => console.error("Error fetching posts:", error));
 
-    function deletePost() {
+   /* function deletePost() {
             const deleteUrl = "https://v2.api.noroff.dev/blog/posts/Synthia";
             fetch(deleteUrl, {
                 method: 'DELETE',
@@ -35,7 +35,7 @@ function fetchPostData() {
         
 
    
-}
+}*/
 
 function deletePost(postId) {
     const deleteUrl = `https://v2.api.noroff.dev/blog/posts/Synthia`;
@@ -63,26 +63,5 @@ document.addEventListener("DOMContentLoaded", function() {
             const postId = button.getAttribute("data-id");
             deletePost(postId);
         });
-    });
-});
-
-/*$(document).ready(function() {
-    $('.delete').on('click', function() {
-        var postId = $(this).data('id');
-        var confirmation = confirm('Are you sure you want to delete this post?');
-
-        if (confirmation) {
-            $.ajax({
-                url: 'https://api.noroff.no/v1/posts//Synthia',
-                type: 'DELETE',
-                success: function(response) {
-                    alert('Post deleted successfully');
-                    $(this).closest('tr').remove();
-                },
-                error: function(xhr, status, error) {
-                    alert('Error deleting post');
-                }
-            });
-        }
     });
 });
