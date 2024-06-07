@@ -424,7 +424,8 @@ img{
     flex-direction: row;
     padding: auto 30px;
     background-color:rgba(25, 23, 23, 0.165) ;
-     
+    
+
 }
   
   
@@ -440,12 +441,10 @@ ul {
     padding: 10px;
     flex: 1;
 }
-  
 .footer-nav:nth-child(2) .footer-nav:nth-child(3){
     flex-basis: 15%;
 }
-
-  .footer-nav h4, .social-icons h4{
+.footer-nav h4{
     position: relative;
     margin-bottom: 30px;
     font-weight: 400;
@@ -453,34 +452,29 @@ ul {
     color: black;
     width: fit-content;
     text-transform: capitalize;
-  
-     
 }
-  
-.footer-nav h4::before, .social-icons h4::before{
+
+.footer-nav h4::before{
     content:'';
     position: absolute;
     left: 0;
     bottom: -6px;
     background-color: rgba(128, 0, 128, 0.57);
     height: 2px;
-    width: 40px;   
-      
+    width: 40px;
 }
   
 .footer-nav p:not(:last-child){
     margin-bottom: 8px;
 }
-  
-  
+
 .footer-nav p{
-    text-decoration: none;
-    display: block;
-    font-size: 19px;
-    text-transform: capitalize;
-    color: black;
-    transition: 0.4s;   
-  
+   text-decoration: none;
+   display: block;
+   font-size: 19px;
+   text-transform: capitalize;
+   color: black;
+   transition: 0.4s;
 }
   
 p:not(:last-child){
@@ -494,8 +488,7 @@ p:not(:last-child){
     color: #444;
   
 }
-  
-  
+
 .email-id{
     width: fit-content;
     margin: 20px 0;
@@ -507,8 +500,7 @@ p:not(:last-child){
     color: #3680bd;
     padding-left: 2px;
 }
-  
-  
+
 form{
     padding-bottom: 10px;
     display: flex;
@@ -524,17 +516,14 @@ form .fa{
     margin-right: 10px;
     color: #3680bd;
 }
-  
-  
+
 form input{
     width: 100%;
     background:transparent;
     color: #f1f1f1;
     border: none;
-    outline: #141313;
-  
+    outline: none;
 }
-
 form button{
     background: transparent;
     border: none;
@@ -545,7 +534,6 @@ form button{
 form button .fa-arrow-right{
     font-size: 15px;
 }
-
 .social-icons .fa{
     width: 40px;
     height: 41px;
@@ -558,28 +546,28 @@ form button .fa-arrow-right{
     margin: 10px;
     cursor: pointer;
 }
-  
-  
+
 .social-icons .fa:hover{
     color:rgba(37, 131, 135, 0.704) ;
     background-color:#8EB6DC;
     transition: all .3s;
      
 }
-  
-/*hr{
+
+hr{
     width: 90%;
     border: 0;
     border-bottom: 1px solid #ccc;
     margin: 20px auto;
-  }*/
-  
-.copyright{
+}
+
+.footer-1 .copyright{
     text-align: center;
     height: 10px;
     width: 100%;
     bottom: 0;
-    margin: 10px 0;  
+    margin: 30px 0;
+    
 }
 
 
