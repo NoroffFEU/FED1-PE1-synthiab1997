@@ -1,6 +1,7 @@
 # FED1 Project Exam 1
 
-Use this file to describe your project.
+
+
 
 **Client Name:** HotView Labs
 
@@ -27,3 +28,5 @@ HotView Labs has earned a reputation for excellence in the tech industry, thanks
 Despite their success, HotView Labs remains true to its humble beginnings and core values of integrity, creativity, and teamwork. They continue to embrace new challenges, explore new ideas, and push the boundaries of what's possible, always with the goal of making a meaningful impact on the world.
 
 HotView Labs: Where Innovation Meets Inspiration.
+
+
