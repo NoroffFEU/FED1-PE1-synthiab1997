@@ -609,7 +609,7 @@ section.section.topics{
 
 .topic-item p{
   margin: 0;
-  font-size: larger;
+  font-size: larger;gap: inherit;
 }
 
 .topic-change{
